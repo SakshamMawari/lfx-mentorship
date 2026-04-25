@@ -14,22 +14,21 @@ The solution is implemented in Node.js and includes:
 
 ## Project Structure
 project/
+│-- src/
+│ |--  parser.js
+│ |-- scanner.js
+│ |-- comparator.js
+│ |-- graph.js
+│ |-- index.js
 │
-├── src/
-│ ├── parser.js
-│ ├── scanner.js
-│ ├── comparator.js
-│ ├── graph.js
-│ └── index.js
+|-- test/
+│     |-- test.js
 │
-├── test/
-│ └── test.js
-│
-├── instr_dict.json
-├── README.md
-└── riscv-isa-manual/
-└── src/
-├── *.adoc
+|-- instr_dict.json
+|--README.md
+|-- riscv-isa-manual/
+|-- src/
+|-- *.adoc
 
 ---
 
