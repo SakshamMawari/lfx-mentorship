@@ -47,40 +47,44 @@ project/
 ```bash
 git clone https://github.com/riscv/riscv-isa-manual.git
 ```
-2. Download Instruction Data
+### 2. Download Instruction Data
 
-Download instr_dict.json from:
 ```bash
 https://github.com/rpsene/riscv-extensions-landscape
 ```
 
-Place it in the root project directory.
+## Place it in the root project directory.
 
-How to Run
-Run Main Program
-node main.js
+### How to the program 
+```bash 
+ node src/index.js
+ ```
+### How to test the code
+ ```bash
+ node test/test.js
+ ```
 
-This executes:
+## This executes:
 
-Tier 1: Instruction parsing and grouping
-Tier 2: Cross-referencing with ISA manual
-Graph generation
-Run Unit Tests
-node test.js
-Sample Output
+- Tier 1: Instruction parsing and grouping
+- Tier 2: Cross-referencing with ISA manual
+- Graph generation
+- Run Unit Tests
+
+### Sample Output
 Extension Summary
-rv_zba | 4 instructions | e.g. SH1ADD
-rv_m   | 15 instructions | e.g. MUL
-rv_i   | 120 instructions | e.g. ADD
+- rv_zba | 4 instructions | e.g. SH1ADD
+- rv_m   | 15 instructions | e.g. MUL
+- rv_i   | 120 instructions | e.g. ADD
 
-Cross Reference Report
-=== CROSS REFERENCE REPORT ===
-42 matched
-3 in JSON only
-5 in manual only
+### Cross Reference Report
 
-Graph Output
+- 42 matched
+- 3 in JSON only
+- 5 in manual only
 
-zba -> zbb, zbc
-zbb -> zba
-zbc -> zba
+### Graph Output
+
+- zba -> zbb, zbc
+- zbb -> zba
+- zbc -> zba
