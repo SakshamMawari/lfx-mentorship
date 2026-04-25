@@ -11,7 +11,6 @@ The solution is implemented in Node.js and includes:
 - Graph generation showing relationships between extensions
 - Unit tests validating core logic
 
----
 
 ## Project Structure
 project/
@@ -47,11 +46,13 @@ project/
 
 ```bash
 git clone https://github.com/riscv/riscv-isa-manual.git
-
+```
 2. Download Instruction Data
 
 Download instr_dict.json from:
+```bash
 https://github.com/rpsene/riscv-extensions-landscape
+```
 
 Place it in the root project directory.
 
