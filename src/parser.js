@@ -21,6 +21,16 @@ function extractJsonExtensions(jsonData) {
 }
 
 function extractExtensionSet(jsonData) {
-  
+  const set = new Set();
+
+  for (const instr in jsonData) {
+    let exts = jsonData[instr].extension || [];
+    if (!Array.isArray(exts)) exts = [exts];
+
+    exts.forEach((e) => set.add(e.toLowerCase()));
+  }
+
+  return set;
+}
 
 module.exports = { extractJsonExtensions, extractExtensionSet };
